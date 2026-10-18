@@ -1,0 +1,35 @@
+name: 🐛 Bug Report
+description: Create a report to help us improve.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this issue!
+        *(Sponsors receive fast-tracked response and prioritized triage: [Sponsor @Enard52](https://github.com/sponsors/Enard52))*
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed steps to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: checkboxes
+    id: sponsor-status
+    attributes:
+      label: Sponsorship Status
+      options:
+        - label: I am an active GitHub Sponsor for @Enard52 (Priority Triage)
